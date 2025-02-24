@@ -5,6 +5,7 @@ import LikesPage from "../pages/LikesPage";
 
 export const router = createBrowserRouter([
     {path:'/',element:<MainLayouts/>, children:[
+            {index:true,element:<PokemonPage/>},
             {path:'/pokemon',element:<PokemonPage/>},
             {path:'/likes',element: <LikesPage/>}
         ]}
